@@ -1,0 +1,13 @@
+server:
+  port: 9006
+  servlet:
+    context-path: /es
+
+spring:
+  data:
+    elasticsearch:
+      repositories:
+        enabled: true
+      #多实例集群扩展时需要配置以下两个参数
+#      cluster-name: datab-search
+#      cluster-nodes: 127.0.0.1:9300,127.0.0.1:9301　
